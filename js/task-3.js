@@ -1,8 +1,9 @@
 function getElementWidth(content, padding, border) {
-const contWidth = Number.parseInt(content);
-const horizontalPadding = Number.parseInt(padding);
-const thickNess = Number.parseInt(border);
-const Npx = contWidth + horizontalPadding * thickNess;
+    const parties = 2;
+const contWidth = Number.parseFloat(content);
+const horizontalPadding = Number.parseFloat(padding);
+const thickNess = Number.parseFloat(border);
+const Npx = contWidth + parties * horizontalPadding + parties * thickNess;
 return Npx;
 }
 getElementWidth("50px", "8px", "4px");

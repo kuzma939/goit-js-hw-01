@@ -1,9 +1,9 @@
 function getShippingMessage(country, price, deliveryFee) {
-    const countryDelivery = Number.parseFloat(country);
+
     const totalCost = Number.parseFloat(price);
     const shippingCost = Number.parseFloat(deliveryFee);
     const totalPrice = totalCost + shippingCost;
-const texDroids = `Shipping to ${countryDelivery} will cost ${totalPrice} credits`;
+const texDroids = `Shipping to ${country} will cost ${totalPrice} credits`;
     return texDroids;
 }
 getShippingMessage("Australia", "120", "50");

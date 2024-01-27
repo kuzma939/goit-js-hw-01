@@ -1,10 +1,7 @@
 
 function makeTransaction(quantity, pricePerDroid) {
-    
-const numberDroids = Number.parseFloat(quantity);
-const priceDroids = Number.parseFloat(pricePerDroid);
-const totalPrice = numberDroids * priceDroids;
-const texDroids = `You ordered ${numberDroids} droids worth ${totalPrice} credits!`;
+const totalPrice = quantity * pricePerDroid;
+const texDroids = `You ordered ${quantity} droids worth ${totalPrice} credits!`;
 return texDroids;
 } 
  makeTransaction("5", "3000");
